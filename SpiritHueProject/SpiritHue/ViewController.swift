@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 //    let imageView = UIImageView(image: UIImage(named: "backgroundImage"))
     
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitTextButton: UIButton!
     
     let myImage = UIImage(named: "imageName")
+    
+    let dataProcessed = DataParser()
     
     
 
@@ -42,9 +45,15 @@ class ViewController: UIViewController {
     
     //Responsible for sending the text over
     @IBAction func submitTextButtonPressed(_ sender: UIButton) {
+        let dataProcessed = DataParser()
+        //checks if emotionsTextBox.text is not nil and assigns the unwrapped text value to the text constant.
         if let text = emotionsTextBox.text {
-            // Do something with the text, for example:
-            print("Submitted text: \(text)")
+            //This is another if let statement that uses the createPayload(from:) function of the DataParser class to create a JSON-encoded Data object from the text constant. The if let statement checks if createPayload(from:) returns a non-nil value (i.e., the encoding was successful) and assigns the resulting data object to the data constant.
+            if let data = dataProcessed.createPayload(from: text) {
+                // Do something with the data, for example:
+                print("Submitted text: \(text)")
+                print("JSON data: \(String(data: data, encoding: .utf8)!)")
+            }
         }
         emotionsTextBox.text = ""
     }
