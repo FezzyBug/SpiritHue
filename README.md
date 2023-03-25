@@ -1,8 +1,8 @@
-# SpiritHue
+# SpiritHue 🎨
 
-SpiritHue is an iOS app that allows users to express their emotions by typing them into a text field. The app then converts the text into a JSON payload and sends it to a server for processing.
+*PlaceHolder* SpiritHue is an iOS app that allows users to express their emotions by typing them into a text field. The app then converts the text into a JSON payload and sends it to a server for processing.
 
-## Installation
+## Installation 💻
 
 To run the app, you'll need Xcode 12 or later installed on your Mac. You can download the latest version of Xcode from the Mac App Store or from the <a href="https://developer.apple.com/xcode/">Apple Developer website</a>.
 
