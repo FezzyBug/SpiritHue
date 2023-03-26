@@ -53,10 +53,24 @@ class ViewController: UIViewController {
                 // Do something with the data, for example:
                 print("Submitted text: \(text)")
                 print("JSON data: \(String(data: data, encoding: .utf8)!)")
+                
+                fetchEmotion(text: text) { emotion, error in
+                    DispatchQueue.main.async {
+                        if let error = error {
+                            print("Error:", error.localizedDescription)
+                        } else if let emotion = emotion {
+                            print("Emotion:", emotion)
+                        }
+                    }
+                }
+
             }
         }
         emotionsTextBox.text = ""
     }
+    
+    
+
 
 }
 
