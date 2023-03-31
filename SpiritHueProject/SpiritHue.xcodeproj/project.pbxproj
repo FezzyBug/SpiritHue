@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121D801329D73B7000CAD4B7 /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121D801229D73B7000CAD4B7 /* DemoTest.swift */; };
 		122DEAC429CEA27F00DCCC9A /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DEAC329CEA27F00DCCC9A /* DataParser.swift */; };
+		122E2F7F29D117600000C68B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E2F7E29D117600000C68B /* ContentView.swift */; };
 		1231601229CFF79C0025F29B /* EmotionsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1231601129CFF79C0025F29B /* EmotionsCall.swift */; };
 		12C5552729C8A4EA008B83F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C5552629C8A4EA008B83F3 /* AppDelegate.swift */; };
 		12C5552929C8A4EA008B83F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C5552829C8A4EA008B83F3 /* SceneDelegate.swift */; };
@@ -18,7 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121D801229D73B7000CAD4B7 /* DemoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
 		122DEAC329CEA27F00DCCC9A /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		122E2F7E29D117600000C68B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1231601129CFF79C0025F29B /* EmotionsCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsCall.swift; sourceTree = "<group>"; };
 		12C5552329C8A4EA008B83F3 /* SpiritHue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiritHue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C5552629C8A4EA008B83F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				12C5553429C8A4EB008B83F3 /* Info.plist */,
 				122DEAC329CEA27F00DCCC9A /* DataParser.swift */,
 				1231601129CFF79C0025F29B /* EmotionsCall.swift */,
+				122E2F7E29D117600000C68B /* ContentView.swift */,
+				121D801229D73B7000CAD4B7 /* DemoTest.swift */,
 			);
 			path = SpiritHue;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			files = (
 				12C5552B29C8A4EA008B83F3 /* ViewController.swift in Sources */,
 				12C5552729C8A4EA008B83F3 /* AppDelegate.swift in Sources */,
+				122E2F7F29D117600000C68B /* ContentView.swift in Sources */,
 				1231601229CFF79C0025F29B /* EmotionsCall.swift in Sources */,
 				122DEAC429CEA27F00DCCC9A /* DataParser.swift in Sources */,
+				121D801329D73B7000CAD4B7 /* DemoTest.swift in Sources */,
 				12C5552929C8A4EA008B83F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

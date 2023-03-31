@@ -17,7 +17,7 @@ func fetchEmotion(text: String, completion: @escaping (String?, Error?) -> Void)
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    request.addValue("Bearer YOUR_API_KEY", forHTTPHeaderField: "Authorization")
+    request.addValue("Bearer ", forHTTPHeaderField: "Authorization")
     
     // Define the JSON payload
     let json: [String: Any] = ["inputs": text]
